@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "738851375387",
+    "firebase_url": "https://agri-scheme-default-rtdb.firebaseio.com",
+    "project_id": "agri-scheme",
+    "storage_bucket": "agri-scheme.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738851375387:android:5a7d5d16eb7aa437d2abbe",
+        "android_client_info": {
+          "package_name": "com.example.agrischeme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "738851375387-sjscd81cmsfa41lvpmqnmqm9tt0pmvkh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiefmMu-19dFOr1UpFGXAgZi-TY64Y8VI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "738851375387-sjscd81cmsfa41lvpmqnmqm9tt0pmvkh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/agreesinchan"
+    tools:context=".schemedetails">
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Insert User details"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        app:cardCornerRadius="40dp"
+        android:layout_margin="40dp"
+        app:cardElevation="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <ImageView
+            android:id="@+id/imgupload"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/ic_baseline_upload_file_24"
+            tools:ignore="SpeakableTextPresentCheck" />
+    <EditText
+        android:id="@+id/editscheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter Scheme"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/text"/>
+
+        <EditText
+            android:id="@+id/editdoc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editdetails"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Enter Documents Name"
+            android:inputType="textPersonName"/>
+        <EditText
+            android:id="@+id/editdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editdetails"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Enter date"
+            android:inputType="textPersonName"/>
+
+        <Button
+            android:id="@+id/buttoninsert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editdate"
+            android:layout_marginTop="30dp"
+            app:cornerRadius="20dp"
+            android:drawableLeft="@drawable/ic_baseline_arrow_outward_24"
+            android:backgroundTint="#feae00"
+            android:text="Insert Data" />
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="20dp"
+    app:cardCornerRadius="15dp"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="150dp"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/p1" />
+
+        <TextView
+            android:id="@+id/textname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/img"
+            android:text="Scheme name"
+            android:textColor="#07480E"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textdoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textname"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/img"
+            android:text="Doc: "
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textdate"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/img"
+            android:layout_below="@id/textdoc"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:drawableStart="@drawable/ic_baseline_calendar_month_24"
+            android:text="Valid Upto: " />
+
+
+        <Button
+            android:id="@+id/applyb"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/textdate"
+            android:layout_marginLeft="160dp"
+            android:backgroundTint="#feae00"
+            android:drawableLeft="@drawable/ic_baseline_arrow_outward_24"
+            android:text="Apply"
+            android:textColor="#07480E"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

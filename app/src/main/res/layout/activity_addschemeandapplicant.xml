@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/agreesinchan"
+        tools:context=".addschemeandapplicant">
+
+    <ImageView
+        android:id="@+id/add"
+        android:layout_width="200dp"
+        android:layout_height="140dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="170dp"
+        app:srcCompat="@drawable/ic_undraw_going_up_re_86kg"
+        android:textSize="18sp"
+        app:cornerRadius="20dp"
+
+        />
+
+    <Button
+        android:id="@+id/btadds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="320dp"
+        android:backgroundTint="#F6F9FA"
+        android:text="Add Scheme"
+        android:textColor="#020000"
+        app:cornerRadius="20dp" />
+
+    <ImageView
+        android:id="@+id/applicant"
+        android:layout_width="200dp"
+        android:layout_height="140dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="400dp"
+        app:srcCompat="@drawable/ic_undraw_female_avatar_efig" />
+
+
+    <Button
+        android:id="@+id/btapplicant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:text="applicant"
+        android:backgroundTint="#F6F9FA"
+        app:cornerRadius="20dp"
+        android:textColor="#020000"
+        android:layout_marginTop="560dp"/>
+</RelativeLayout>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/drones"
+
+    android:id="@+id/cardview"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:textColor="#07480E"
+        android:fontFamily="sans-serif-black"
+        android:text="Scheme  Registration"
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+
+        />
+
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/text"
+        android:foregroundGravity="center"
+        android:padding="15dp"
+        >
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/corner_rounded"
+            android:ems="10"
+            android:hint="Enter Name"
+            android:textSize="15dp"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/corner_rounded"
+            android:ems="10"
+            android:hint="Enter Address"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textSize="15dp"
+            tools:ignore="HardcodedText,MissingPrefix" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/corner_rounded"
+            android:ems="10"
+            android:hint="Enter Phoneno"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textSize="15dp"
+            tools:ignore="Autofill,HardcodedText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/corner_rounded"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/filetitle"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phone"
+                android:ems="10"
+                android:padding="10dp"
+
+                android:hint="Enter Adhar No"
+                android:textSize="15dp"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+
+                tools:ignore="Autofill" />
+
+            <ImageView
+                android:id="@+id/imagebrowse"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/phone"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/filetitle"
+                app:srcCompat="@drawable/ic_upload_image_icon"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/corner_rounded"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/filepan"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phone"
+                android:ems="10"
+                android:hint="Enter Pan No"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:id="@+id/imagebrowse1"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/phone"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/filetitle"
+                app:srcCompat="@drawable/ic_upload_image_icon"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/corner_rounded"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/fileuatara"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phone"
+                android:ems="10"
+                android:padding="10dp"
+                android:hint=" Enter 7-12 Utara No"
+                android:textSize="15dp"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                tools:ignore="Autofill" />
+
+            <ImageView
+                android:id="@+id/imagebrowse2"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/phone"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/filetitle"
+                app:srcCompat="@drawable/ic_upload_image_icon"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/imageupload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/filetitle"
+            android:layout_marginTop="30dp"
+
+            android:textColor="#fff"
+            android:backgroundTint="#feae00"
+            android:text="Upload"
+
+            android:alpha="1"
+
+            app:cornerRadius="20dp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textmarque1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardview"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="650dp"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="Terms and conditions-Always use appropriate fertilizer in right quantity based on soil test .Must use organic manures to maintain the fertility of the soil."
+        android:textColor="#fff"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        tools:ignore="NotSibling" />
+</RelativeLayout>
